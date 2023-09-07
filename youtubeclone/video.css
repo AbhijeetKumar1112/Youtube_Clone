@@ -1,0 +1,127 @@
+.video-grid{
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 36px;
+    padding: 85px 25px 30px 20px;
+    margin-bottom: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+@media(max-width:1275px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:955px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:685px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-preview {
+    vertical-align: top;
+}
+
+.channel {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.video-author {
+    font-size: 12px;
+    color: #606060;
+    margin-bottom: 4px;
+}
+
+.video-stats {
+    margin-top: 0;
+    font-size: 12px;
+    color: #606060;
+}
+
+.sidebar{
+    padding-top: 10px;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    top: 60px;
+    width:76px;
+    z-index: 200;
+}
+
+.video-time{
+    font-weight: 500;
+    font-size: 12px;
+    position: absolute;
+    background-color: black;
+    color:aliceblue;
+    bottom:12px;
+    right:4px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+ .notifications-icons{
+    position: relative;
+    
+}
+.notifications-count{
+    position: absolute;
+    top:-2px;
+    right:-5px;
+    width: 11px;
+    height: 11px;
+    text-align: center;
+    padding:2px 2px; 
+    background-color: rgb(205, 49, 49);
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0.6em; 
+    border-radius: 50%;
+}
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 200;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(237, 235, 235);
+}
+.sidebar-link img{
+    height: 24px; 
+    margin-bottom: 4px;
+}
+.sidebar-link div{
+    font-size: 10px;
+}
